@@ -10,7 +10,11 @@ function checkTheNumber() {
   document.getElementById("number").value = '';
 
   if(inputedNumber == randomNumber) {
-    document.getElementById('message').innerHTML = "You Guessed Correctly";
+    document.getElementById('message').innerHTML = "CONGRATS!! You Won the Game";
+  } else if(inputedNumber > randomNumber) {
+    document.getElementById('message').innerHTML = "Guessed number in large";
+  } else if(inputedNumber < randomNumber) {
+    document.getElementById('message').innerHTML = "Guessed number in smaller";
   } else if(noOfAttempt == 0) {
     document.getElementById('message').innerHTML = "You Lost";
     document.getElementById('btn').disabled  = true;
