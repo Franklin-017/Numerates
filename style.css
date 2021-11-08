@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 
-.container {
+.container, #container {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -15,6 +16,7 @@
   background: #fd746c;
   background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
   background: linear-gradient(to right, #ff9068, #fd746c);
+  padding-bottom: 50px;
 }  
 
 .attemptIndicator{
@@ -59,7 +61,7 @@
   background-color: #fff;
   padding: 10px;
   font-size: 12px;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 7px 4px 10px rgb(95, 95, 95);
 }
 
@@ -82,6 +84,7 @@ input {
   border-radius: 4px;
   color: whitesmoke;
   padding: 5px;
+  text-align: center;
 }
 
 .submitBtn {
@@ -95,13 +98,24 @@ input {
 #message {
   display: block;
   font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
   color: #fd746c;
+}
+
+.emoji {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-device-width : 768px) {
 
   .attemptIndicator {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .circle {
@@ -122,12 +136,20 @@ input {
   }
 
   .gameSectionHeading {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 50px;
   }
 
+  .label {
+    font-size: 20px;
+  }
+
   input {
-    font-size: 18px;
+    font-size: 24px;
+  }
+
+  .btn {
+    margin-top: 20px;
   }
 
   .submitBtn {
@@ -136,6 +158,14 @@ input {
   }
 
   #message {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .emoji {
+    font-size: 100px;
+  }
+
+  h3 {
+    font-size: 36px;
   }
 }
