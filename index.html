@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Numberates</title>
+</head>
+<body>
+  <div class="container">
+    <div class="attemptIndicator">
+      No.of.attempts
+      <div class="circle" id="attempt"> 
+        10
+      </div>
+    </div>
+    <div class="mainSection">
+      <h3 class="heading">Number Guessing Game</h3>
+      <div class="gameSection">
+        <p class="gameSectionHeading">Guess the number between 1-100</p>
+        <div>
+          <label for="number" class="label">Enter the number:</label>
+          <input type="number" id="number" name="number">
+          <span id="message"></span>
+        </div>
+        <div class="btn">
+          <button class="submitBtn" id="btn" onclick="checkTheNumber()">Check</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

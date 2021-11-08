@@ -1,0 +1,141 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fd746c;
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+  background: linear-gradient(to right, #ff9068, #fd746c);
+}  
+
+.attemptIndicator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  margin-right: 100px;
+  margin-top: 100px;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.circle {
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #8E0E00;
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+  background: linear-gradient(to right, #1F1C18, #8E0E00);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.mainSection {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.heading {
+  color: aliceblue;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.gameSection {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: 7px 4px 10px rgb(95, 95, 95);
+}
+
+.gameSectionHeading {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+input {
+  background: #304352;
+  background: -webkit-linear-gradient(to right, #318397, #1270b8);
+  background: linear-gradient(to right, #318397, #1270b8);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #fd746c;
+  color: whitesmoke;
+}
+
+#message {
+  display: block;
+  font-size: 12px;
+  color: #fd746c;
+}
+
+@media only screen and (min-device-width : 768px) {
+
+  .attemptIndicator {
+    font-size: 36px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    line-height: 95px;
+    margin-right: 100px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .gameSection {
+    font-size: 18px;
+    padding: 100px;
+  }
+
+  .gameSectionHeading {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+
+  .submitBtn {
+    font-size: 24px;
+    border-radius: 10px;
+  }
+
+  #message {
+    font-size: 18px;
+  }
+}
